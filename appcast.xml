@@ -4,41 +4,37 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>AI Usage Battery</title>
         <item>
-            <title>0.1.2</title>
-            <pubDate>Thu, 21 May 2026 18:20:20 +0900</pubDate>
-            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.1.2</link>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <title>0.1.3</title>
+            <pubDate>Thu, 21 May 2026 18:43:40 +0900</pubDate>
+            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.1.3</link>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.1.2 (Build 3)
+            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.1.3 (Build 4)
 
-This release improves the menu bar meter and makes the popover quicker to use.
+This release improves the Sparkle update experience.
 
 ## Highlights
 
-- Replaces the old dot meter with a compact pie meter.
-- Makes the pie meter the default menu bar style for new installs.
-- Keeps existing `dots` settings compatible by restoring them as `Pie`.
-- Renders the pie meter as an AppKit image so it appears reliably in the macOS menu bar.
-- Keeps percentage text visible when `Show percentages` is enabled.
-- Adds a `5 hours / 1 week` toggle directly inside the menu bar popover, below the provider toggle.
+- Enables Sparkle automatic update checks explicitly in the app bundle.
+- Enables Sparkle automatic update downloads by default.
+- Sets the scheduled automatic update check interval to one hour.
 
 ## Fixes
 
-- Fixes the pie meter disappearing in the menu bar.
-- Fixes the pie style hiding percentage text.
-- Improves unavailable/unknown usage rendering so the menu bar still shows a visible meter outline.
+- Prevents the Sparkle automatic update permission prompt from interrupting the first manual `Check for Updates` flow.
+- Makes direct-distribution update behavior more predictable for users updating from older builds.
 
 ## Verification
 
 - `swift test` passes.
 - Release app signing, notarization, stapling, Gatekeeper assessment, DMG generation, and DMG verification were run for this build.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.1.2/AIUsageBattery.zip" length="3887048" type="application/octet-stream" sparkle:edSignature="7XU4RWpu/7MV0qb49BGz06x4Z0D2Wtdr9JyaGS5w/J1dqr49o3TAtPyT8/wjmBV6btJ1ZVEveWKUzo/ICpxrDw=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.1.3/AIUsageBattery.zip" length="3887115" type="application/octet-stream" sparkle:edSignature="UkuBA6P97UsTCkvt1saWSKSf7iFAXz+CsmlrXJSH32qNzqBcsZj/jWsGcJi7bfm3K283SqokiFiR1l7ZZH/oDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: bSL9MOc9QWJG53nyWHnQ7iHnA3lKi6/MPbQ/cJzlA+H4voRdySvZqsosHXMNdUXNovdS1UG3VXeeFa4zC9SYAQ==
-length: 2286
+edSignature: MSP0J4TJ7jpr6ifau68nyFfimOKh1xL52PgOXwrkxI7rK3TDO5dL4NfgbkoYme4rIA0jAoeDtovns25WiVo/CA==
+length: 2024
 -->
