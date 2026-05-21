@@ -4,13 +4,14 @@ This release improves the Sparkle update experience.
 
 ## Highlights
 
-- Enables Sparkle automatic update checks explicitly in the app bundle.
+- Moves Sparkle's automatic update permission prompt to the first Settings window visit.
 - Enables Sparkle automatic update downloads by default.
 - Sets the scheduled automatic update check interval to one hour.
 
 ## Fixes
 
-- Prevents the Sparkle automatic update permission prompt from interrupting the first manual `Check for Updates` flow.
+- Prevents the Sparkle automatic update permission prompt from interrupting a manual `Check for Updates` flow.
+- Keeps manual update checks focused on finding/downloading the update instead of first asking about future automatic checks.
 - Makes direct-distribution update behavior more predictable for users updating from older builds.
 
 ## Verification

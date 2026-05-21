@@ -5,7 +5,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <title>AI Usage Battery</title>
         <item>
             <title>0.1.3</title>
-            <pubDate>Thu, 21 May 2026 18:43:40 +0900</pubDate>
+            <pubDate>Thu, 21 May 2026 18:53:19 +0900</pubDate>
             <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.1.3</link>
             <sparkle:version>4</sparkle:version>
             <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
@@ -17,13 +17,14 @@ This release improves the Sparkle update experience.
 
 ## Highlights
 
-- Enables Sparkle automatic update checks explicitly in the app bundle.
+- Moves Sparkle's automatic update permission prompt to the first Settings window visit.
 - Enables Sparkle automatic update downloads by default.
 - Sets the scheduled automatic update check interval to one hour.
 
 ## Fixes
 
-- Prevents the Sparkle automatic update permission prompt from interrupting the first manual `Check for Updates` flow.
+- Prevents the Sparkle automatic update permission prompt from interrupting a manual `Check for Updates` flow.
+- Keeps manual update checks focused on finding/downloading the update instead of first asking about future automatic checks.
 - Makes direct-distribution update behavior more predictable for users updating from older builds.
 
 ## Verification
@@ -31,10 +32,10 @@ This release improves the Sparkle update experience.
 - `swift test` passes.
 - Release app signing, notarization, stapling, Gatekeeper assessment, DMG generation, and DMG verification were run for this build.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.1.3/AIUsageBattery.zip" length="3887115" type="application/octet-stream" sparkle:edSignature="UkuBA6P97UsTCkvt1saWSKSf7iFAXz+CsmlrXJSH32qNzqBcsZj/jWsGcJi7bfm3K283SqokiFiR1l7ZZH/oDw=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.1.3/AIUsageBattery.zip" length="3889814" type="application/octet-stream" sparkle:edSignature="ytRmnVNAis4Q17yAf/1kS3gwYG085GctQ1pnjLZk37TZpVTDeyhJhDTaru/pK0szhJipBYUASNLR8jmaO3r1BA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: MSP0J4TJ7jpr6ifau68nyFfimOKh1xL52PgOXwrkxI7rK3TDO5dL4NfgbkoYme4rIA0jAoeDtovns25WiVo/CA==
-length: 2024
+edSignature: NM/SLEwJ69pU0I/XIt0Mdb4Uaa46kmh0kHQVu3XlZPKNHj7TieSp8WIVfdmYXjY9UnLWhfJyZENDP3C89BwlDg==
+length: 2159
 -->
