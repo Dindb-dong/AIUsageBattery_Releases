@@ -4,50 +4,41 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>AI Usage Battery</title>
         <item>
-            <title>0.1.1</title>
-            <pubDate>Thu, 21 May 2026 15:28:13 +0900</pubDate>
-            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.1.1</link>
-            <sparkle:version>2</sparkle:version>
-            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <title>0.1.2</title>
+            <pubDate>Thu, 21 May 2026 18:20:20 +0900</pubDate>
+            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.1.2</link>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.1.1 (Build 2)
+            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.1.2 (Build 3)
 
-This release turns AI Usage Battery into a usable direct-distribution macOS app with signed release artifacts, Sparkle update support, and a more complete menu bar/settings experience.
+This release improves the menu bar meter and makes the popover quicker to use.
 
 ## Highlights
 
-- Adds a real Xcode project workflow for local debugging and release builds.
-- Adds Sparkle 2.9.2 to the macOS app target so in-app update checks are available in direct-distribution builds.
-- Ships notarized Developer ID release artifacts: `.app`, `.zip`, and `.dmg`.
-- Adds a polished drag-to-Applications DMG layout.
-- Adds the generated app icon assets and Finder/app bundle icon metadata.
+- Replaces the old dot meter with a compact pie meter.
+- Makes the pie meter the default menu bar style for new installs.
+- Keeps existing `dots` settings compatible by restoring them as `Pie`.
+- Renders the pie meter as an AppKit image so it appears reliably in the macOS menu bar.
+- Keeps percentage text visible when `Show percentages` is enabled.
+- Adds a `5 hours / 1 week` toggle directly inside the menu bar popover, below the provider toggle.
 
-## Usage Tracking
+## Fixes
 
-- Improves Codex usage detection from local rate-limit metadata.
-- Improves Claude usage detection from transcript estimates, statusline capture data, and probe fallbacks.
-- Adds shared provider selection so menu bar, popover, and settings stay in sync.
-- Adds active account display for Codex and Claude where local metadata is available.
+- Fixes the pie meter disappearing in the menu bar.
+- Fixes the pie style hiding percentage text.
+- Improves unavailable/unknown usage rendering so the menu bar still shows a visible meter outline.
 
-## App Experience
+## Verification
 
-- Adds onboarding for first launch setup.
-- Adds notification permission and threshold notification controls.
-- Adds settings for provider display, menu bar meter style, usage window selection, refresh cadence, diagnostics, privacy, license, and updates.
-- Adds a Quit action in both the menu bar popover and settings.
-- Fixes menu bar battery coloring and provider toggle behavior.
-
-## Release Notes
-
-- Sparkle appcast feed: `https://raw.githubusercontent.com/Dindb-dong/AIUsageBattery_Releases/main/appcast.xml`
-- Download the DMG for normal installation.
-- Sparkle update installation should be tested from an older installed build once a newer appcast entry is available.
+- `swift test` passes.
+- Release app signing, notarization, stapling, Gatekeeper assessment, DMG generation, and DMG verification were run for this build.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.1.1/AIUsageBattery.zip" length="3881039" type="application/octet-stream" sparkle:edSignature="y8htb4Xr2skMly7zvq/bRDiVvWXoxa9KII7lWKuwOerDp2JB2bEz/X14eMX8DsNVBrQyNlo3oOW+UCmrZswIBA=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.1.2/AIUsageBattery.zip" length="3887048" type="application/octet-stream" sparkle:edSignature="7XU4RWpu/7MV0qb49BGz06x4Z0D2Wtdr9JyaGS5w/J1dqr49o3TAtPyT8/wjmBV6btJ1ZVEveWKUzo/ICpxrDw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: r0P1bbxOj3w2h/4DOAiywqguV8c3A+hoFWBcKHiAmDBa6Xiuq9EJwXPI6GsLZxxYuf6ENyJJQIBDffJzbbDyDA==
-length: 3009
+edSignature: bSL9MOc9QWJG53nyWHnQ7iHnA3lKi6/MPbQ/cJzlA+H4voRdySvZqsosHXMNdUXNovdS1UG3VXeeFa4zC9SYAQ==
+length: 2286
 -->
