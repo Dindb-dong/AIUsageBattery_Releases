@@ -5,7 +5,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <title>AI Usage Battery</title>
         <item>
             <title>0.2.1</title>
-            <pubDate>Fri, 22 May 2026 14:18:57 +0900</pubDate>
+            <pubDate>Fri, 22 May 2026 14:28:30 +0900</pubDate>
             <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.1</link>
             <sparkle:version>5</sparkle:version>
             <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
@@ -36,10 +36,10 @@ This release expands AI Usage Battery from a single-provider meter into a custom
 
 - `swift test` passes.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.1/AIUsageBattery.zip" length="4020417" type="application/octet-stream" sparkle:edSignature="s3yF3wGI8axGk0anlizUigT65XhlDmArBbPQEhXzK4CApC0a6Jkc9ntAf6wNprfA+WbGnDeYV9icOxWzjaGzBw=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.1/AIUsageBattery.zip" length="4020403" type="application/octet-stream" sparkle:edSignature="cSrPqVxSi7vAIxp721f381Y1j92A/bTO1uQiwNEGc8YQdHKCwmAju3JZt/DgybPxQvLip6B32NYyxjLJBZ4LCA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: UiPg/QXa3rlxSTiVo8jCUzmO+qP+1ZoWNOlw8dwnI/RKlsYjiBNwi9619rGmneLKQxaLqCTv2l1On356ZCc7BA==
+edSignature: Qnh+ok1EHTtdomC5m0R/4GaQxznwsLsV1H+yGz8Veas5ZO5od4vez1otSHLBrJU5F/xoF4qCGhSPw3TVdAfJCg==
 length: 2710
 -->
