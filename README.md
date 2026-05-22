@@ -58,18 +58,6 @@ The Settings window lets you tune both behavior and appearance:
 
 Download the latest DMG from the [GitHub Releases page](https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/latest).
 
-Sparkle appcast feed:
-
-```text
-https://raw.githubusercontent.com/Dindb-dong/AIUsageBattery_Releases/main/appcast.xml
-```
-
-App repository:
-
-```text
-https://github.com/Dindb-dong/AIUsageBattery
-```
-
 ---
 
 ## 한국어
@@ -127,15 +115,3 @@ AI Usage Battery는 Codex와 Claude의 사용량 리밋을 메뉴바에서 확�
 ### 다운로드
 
 최신 DMG는 [GitHub Releases 페이지](https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/latest)에서 받을 수 있습니다.
-
-Sparkle appcast feed:
-
-```text
-https://raw.githubusercontent.com/Dindb-dong/AIUsageBattery_Releases/main/appcast.xml
-```
-
-앱 저장소:
-
-```text
-https://github.com/Dindb-dong/AIUsageBattery
-```
