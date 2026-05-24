@@ -1,0 +1,65 @@
+name: Bug report
+description: Report something broken in AI Usage Battery.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Please avoid pasting prompt text, raw transcripts, API keys, or account tokens.
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected instead.
+      placeholder: The menu bar shows..., but I expected...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the shortest path that triggers the issue.
+      placeholder: |
+        1. Open...
+        2. Click...
+        3. See...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Find this in Settings > About.
+      placeholder: 0.2.1 (5)
+    validations:
+      required: true
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider
+      options:
+        - Codex
+        - Claude
+        - Both
+        - Not provider-specific
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: macOS 15.5
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or screen recording
+      description: Attach images if they help. Redact private paths, emails, prompts, and tokens.
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Anything else that might help diagnose the issue.
