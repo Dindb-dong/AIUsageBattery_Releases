@@ -5,7 +5,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <title>AI Usage Battery</title>
         <item>
             <title>0.2.2</title>
-            <pubDate>Sun, 24 May 2026 23:56:43 +0900</pubDate>
+            <pubDate>Mon, 25 May 2026 00:03:41 +0900</pubDate>
             <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.2</link>
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
@@ -23,6 +23,7 @@ This release tightens account detection, reset timing, refresh behavior, and sup
 - Makes the popover refresh button run the local probe and apply updated usage data immediately.
 - Improves manual refresh UX by showing visible processing feedback in the popover.
 - Stops forcing macOS menu bar visibility state so the status item can be placed normally by the system and menu bar managers.
+- Tightens menu bar meter spacing so split percentages reserve less empty space.
 - Adds popover account-switch buttons that open Codex or Claude login flows in Terminal.
 - Removes noisy missing Codex source paths from settings diagnostics.
 - Replaces the About repository row with a report issue button linked to the public release repository.
@@ -34,10 +35,10 @@ This release tightens account detection, reset timing, refresh behavior, and sup
 - Release build is Developer ID signed with hardened runtime.
 - Notarization, stapling, Gatekeeper assessment, zip payload signature verification, DMG verification, and Sparkle appcast signing are part of the release flow.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.2/AIUsageBattery.zip" length="4037706" type="application/octet-stream" sparkle:edSignature="eNvxxs15ssnjD/pRAHRYpOGCzrkVc+UyMMgkJVTHtNVJ5YA1Z2SwLlBmxTW/6pRGjkZ79rcZJ5Dqq+efC03mCw=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.2/AIUsageBattery.zip" length="4038436" type="application/octet-stream" sparkle:edSignature="kEkvYdXM++6959T1TxT3gAs/YmLvmTlxPfdeAgtZAnY9J/wZXEUp+s6fhs6/mZudvRmiuEBL2u6QQ1Jh1Ht1Aw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: GnFFrjsDt1Bj17w6K/DNE9tNmiEP78C4o8O3Xk6E8n6VBCQ+H01cQXlQQqmuz/tsU8+OUkqihGO24hCfWWFYBA==
-length: 2744
+edSignature: mlYaHDuQBYN/ZaHZm+ssdDeta2bxFT6a5j1mNuux3gu5rqKR07MRs0ac7Gig6qiF5MZtgIGh5Oe7isQgnSumDw==
+length: 2825
 -->
