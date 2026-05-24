@@ -5,7 +5,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <title>AI Usage Battery</title>
         <item>
             <title>0.2.2</title>
-            <pubDate>Sun, 24 May 2026 22:14:08 +0900</pubDate>
+            <pubDate>Sun, 24 May 2026 23:35:19 +0900</pubDate>
             <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.2</link>
             <sparkle:version>6</sparkle:version>
             <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
@@ -32,10 +32,10 @@ This release tightens account detection, reset timing, refresh behavior, and sup
 - Release build is Developer ID signed with hardened runtime.
 - Notarization, stapling, Gatekeeper assessment, zip payload signature verification, DMG verification, and Sparkle appcast signing are part of the release flow.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.2/AIUsageBattery.zip" length="3986031" type="application/octet-stream" sparkle:edSignature="wFEUWqMiokOuoGhEqmu8sfnewWvjIkF6ftw9rFxcdQgrTIntvHc32NrMzZm4zwHGHbuLcdk8kFA4/sWoZMXDCA=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.2/AIUsageBattery.zip" length="4036084" type="application/octet-stream" sparkle:edSignature="nSyWvlKUzj2H81m8vMgbWLBVjKUrUrBPqysYNdgmDDyoxVr+lnbM7hKkxdt4OqY3BoEsHMYBEecCoU4jJO8rCA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: qvO8Mo/nmshK8KRWlF9YLr25Rrp5aXHkvlBM2ZtVplxjtNObv5JhxJ+UpqUnDN/wRsxdbHSJsrGczw2eKBeCDg==
+edSignature: F5ihqPqoeo4ARBQRMvtNmAVINJAZA/4qVr1Q6Wjv6wN58f6vGWFsZkivN66vNGbslEGBBEu0CG/YSjsod29KBg==
 length: 2533
 -->
