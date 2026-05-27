@@ -4,41 +4,37 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>AI Usage Battery</title>
         <item>
-            <title>0.2.2</title>
-            <pubDate>Mon, 25 May 2026 00:03:41 +0900</pubDate>
-            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.2</link>
-            <sparkle:version>6</sparkle:version>
-            <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
+            <title>0.2.3</title>
+            <pubDate>Wed, 27 May 2026 14:48:01 +0900</pubDate>
+            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.3</link>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.2 (Build 6)
+            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.3 (Build 7)
 
-This release tightens account detection, reset timing, refresh behavior, and support surfaces for Codex and Claude users.
+This patch release fixes account-switching usage bleed and reduces memory pressure during local Codex and Claude usage refreshes.
 
 ## Changes
 
-- Shows the Codex account email from local auth metadata instead of only the opaque account id.
-- Reads Codex and Claude reset timestamps from provider metadata when available, including full date and time in the popover.
-- Ignores stale Claude statusline reset data so expired windows are not shown as current limits.
-- Makes the popover refresh button run the local probe and apply updated usage data immediately.
-- Improves manual refresh UX by showing visible processing feedback in the popover.
-- Stops forcing macOS menu bar visibility state so the status item can be placed normally by the system and menu bar managers.
-- Tightens menu bar meter spacing so split percentages reserve less empty space.
-- Adds popover account-switch buttons that open Codex or Claude login flows in Terminal.
-- Removes noisy missing Codex source paths from settings diagnostics.
-- Replaces the About repository row with a report issue button linked to the public release repository.
-- Adds structured bug report and feature request templates to the public release repository.
+- Limits Codex and Claude usage detection to activity recorded after the currently detected account credential was updated.
+- Stops reusing cached usage snapshots when the detected provider account id changes.
+- Removes archived Codex sessions from the default rate-limit scan path.
+- Avoids duplicate scanning when a configured source path already contains another source path.
+- Narrows Claude default transcript scanning to concrete usage sources instead of recursively walking the whole Claude config directory.
+- Replaces the Codex probe helper's broad recursive `rg` scan with bounded recent-file tail reads.
+- Keeps stale Claude statusline and probe cache output from applying after an account switch.
 
 ## Verification
 
 - Swift test suite passes.
-- Release build is Developer ID signed with hardened runtime.
-- Notarization, stapling, Gatekeeper assessment, zip payload signature verification, DMG verification, and Sparkle appcast signing are part of the release flow.
+- Probe helper shell syntax validates.
+- Xcode release build is expected to remain Developer ID signed, notarized, stapled, Gatekeeper assessed, and packaged with the existing verified DMG Finder layout flow.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.2/AIUsageBattery.zip" length="4038436" type="application/octet-stream" sparkle:edSignature="kEkvYdXM++6959T1TxT3gAs/YmLvmTlxPfdeAgtZAnY9J/wZXEUp+s6fhs6/mZudvRmiuEBL2u6QQ1Jh1Ht1Aw=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.3/AIUsageBattery.zip" length="4054724" type="application/octet-stream" sparkle:edSignature="pxIbgJ8u7B89aA6+5AIeOZDcjNsHNwhAw+67+CFlzERY0ZKban6zPdnCykm2irgSKTAPAigFODA+HGtbVirBBg=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: mlYaHDuQBYN/ZaHZm+ssdDeta2bxFT6a5j1mNuux3gu5rqKR07MRs0ac7Gig6qiF5MZtgIGh5Oe7isQgnSumDw==
-length: 2825
+edSignature: CJG5P01/ts8YeMyIGJ1H2shb9FSWO4C/4V0l9hfjClBCJtgF1h84iRQxaD3sr7hroTA/V5fqffErCo2I1Z3CCw==
+length: 2464
 -->
