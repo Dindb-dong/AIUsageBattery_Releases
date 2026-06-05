@@ -5,7 +5,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <title>AI Usage Battery</title>
         <item>
             <title>0.2.3</title>
-            <pubDate>Sat, 30 May 2026 10:45:35 +0900</pubDate>
+            <pubDate>Fri, 05 Jun 2026 22:56:38 +0900</pubDate>
             <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.3</link>
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
@@ -35,10 +35,10 @@ This patch release fixes account-switching usage bleed and reduces memory pressu
 - Fresh debug smoke run reduced measured physical footprint from a stale 1.0 GB debug process to 21.5 MB on the rebuilt app.
 - Xcode release build is expected to remain Developer ID signed, notarized, stapled, Gatekeeper assessed, and packaged with the existing verified DMG Finder layout flow.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.3/AIUsageBattery.zip" length="4059689" type="application/octet-stream" sparkle:edSignature="20lm3ZjJWZisut/dQNGSG7Etj83tJG5wd+LvXImPe+qJDuu7O2wdytOhk2EdsrOE4t3kctgEvlf0OkuYBsUwBQ=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.3/AIUsageBattery.zip" length="4061213" type="application/octet-stream" sparkle:edSignature="/ohYyzVTuskUDAdmrdY8y68I7aaPfC35swyEgRrqhCvoER8lKuAOV3PsIOB6twkIGRoT0izRTya0kYnypYe5Bw=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: dXC3Lpp1OgGMOYPpBDTfFiIRf/54alsDgGvNT6vj48LApWSFm2ubew5C7GWvgySR6fWNGdUAl43duSyEVldgAw==
+edSignature: biUGBNQ/F6Rg72N481aiUh0/g4CUSsKVM2zUP+n7bKCFhX7TMw+zKS59kaqcYKfTG/ZfCFcNzEuhGh6GLyWJCw==
 length: 2907
 -->
