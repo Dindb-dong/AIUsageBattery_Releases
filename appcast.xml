@@ -2,10 +2,10 @@
 IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
 --><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>AI Usage Battery</title>
+        <title>AIUsageBattery</title>
         <item>
             <title>0.2.3</title>
-            <pubDate>Mon, 08 Jun 2026 02:00:34 +0900</pubDate>
+            <pubDate>Wed, 17 Jun 2026 12:32:22 +0900</pubDate>
             <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.3</link>
             <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
@@ -14,6 +14,8 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
             <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.3 (Build 7)
 
 This patch release fixes account-switching usage bleed and reduces memory pressure during local Codex and Claude usage refreshes.
+
+This build was refreshed to restore production menu-bar visibility and keep the distributed app bundle name consistent as `AIUsageBattery.app`.
 
 ## Changes
 
@@ -27,6 +29,8 @@ This patch release fixes account-switching usage bleed and reduces memory pressu
 - Narrows Claude default transcript scanning to concrete usage sources instead of recursively walking the whole Claude config directory.
 - Replaces the Codex probe helper's broad recursive `rg` scan with bounded recent-file tail reads.
 - Keeps stale Claude statusline and probe cache output from applying after an account switch.
+- Uses an AppKit status item with a direct menu-bar title so the production app does not inherit hidden SwiftUI `MenuBarExtra` visibility state.
+- Standardizes the distributed app bundle/display name to `AIUsageBattery`.
 
 ## Verification
 
@@ -35,10 +39,10 @@ This patch release fixes account-switching usage bleed and reduces memory pressu
 - Fresh debug smoke run reduced measured physical footprint from a stale 1.0 GB debug process to 21.5 MB on the rebuilt app.
 - Xcode release build is expected to remain Developer ID signed, notarized, stapled, Gatekeeper assessed, and packaged with the existing verified DMG Finder layout flow.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.3/AIUsageBattery.zip" length="4062782" type="application/octet-stream" sparkle:edSignature="oGNdODU9O3SvajYcgp0g568F8JB/V3eUscPuqvMhHk/Ftj9oCU2cZrzyAm8SUrRgeOV9/ZzFXjHB9n0MIFImBw=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.3/AIUsageBattery.zip" length="4139517" type="application/octet-stream" sparkle:edSignature="QRf1cRAezaBYTFEASYbfON/Ars06y5XrCyxoLvnIuQ7bQuscaPktIy2elT1QnlU6azPspe9WM98SXSf54aFFDQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: ORUch139j0Kz7Ddda/bkVVCcGr8bYb5QXCjYqc2RZsJbOs7W+n4RMMlmuGcB8ywN8WAJwjeihTvlDADN2t7PDw==
-length: 2907
+edSignature: 3bBMZcO9DHXck5NeRMfb2Dn8YjRukAAtnZK/dPuAnDBQVMfrYsG3CrcB/PdhuvYOQdKlXeGq/7h/xvdhXSKsBw==
+length: 3271
 -->
