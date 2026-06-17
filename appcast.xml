@@ -4,45 +4,38 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>AIUsageBattery</title>
         <item>
-            <title>0.2.3</title>
-            <pubDate>Wed, 17 Jun 2026 12:32:22 +0900</pubDate>
-            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.3</link>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
+            <title>0.2.4</title>
+            <pubDate>Thu, 18 Jun 2026 00:15:54 +0900</pubDate>
+            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.4</link>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>0.2.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.3 (Build 7)
+            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.4 (Build 8)
 
-This patch release fixes account-switching usage bleed and reduces memory pressure during local Codex and Claude usage refreshes.
-
-This build was refreshed to restore production menu-bar visibility and keep the distributed app bundle name consistent as `AIUsageBattery.app`.
+This release fixes the production menu-bar visibility bug, keeps Codex and Claude usage visible as token-aware meters, and hardens the direct-download DMG release path.
 
 ## Changes
 
-- Limits Codex and Claude usage detection to activity recorded after the currently detected account credential was updated.
-- Stops reusing cached usage snapshots when the detected provider account id changes.
-- Removes archived Codex sessions from the default rate-limit scan path.
-- Avoids duplicate scanning when a configured source path already contains another source path.
-- Coalesces automatic menu-bar refresh triggers so SwiftUI appear/task events do not start overlapping scans.
-- Runs the local usage probe serially to avoid stacked helper processes during refresh bursts.
-- Streams Claude transcript usage into per-window totals instead of retaining a full event array during refresh.
-- Narrows Claude default transcript scanning to concrete usage sources instead of recursively walking the whole Claude config directory.
-- Replaces the Codex probe helper's broad recursive `rg` scan with bounded recent-file tail reads.
-- Keeps stale Claude statusline and probe cache output from applying after an account switch.
-- Uses an AppKit status item with a direct menu-bar title so the production app does not inherit hidden SwiftUI `MenuBarExtra` visibility state.
-- Standardizes the distributed app bundle/display name to `AIUsageBattery`.
+- Replaces the SwiftUI `MenuBarExtra` anchor with an AppKit `NSStatusItem` so the app stays visible in the menu bar even when old macOS menu-bar visibility state is hidden.
+- Keeps the existing SwiftUI popover and settings UI while using AppKit only for the menu-bar item ownership.
+- Shows Codex and Claude usage with token-aware tracking and projected cost details from local usage data.
+- Preserves the account-aware usage detection fixes that prevent cached usage from bleeding across switched accounts.
+- Signs, notarizes, staples, and Gatekeeper-assesses the distributed DMG itself before release.
+- Blocks publishing when local ZIP or DMG release assets fail signature, notarization, or Gatekeeper checks.
+- Downloads the uploaded GitHub Release assets and compares SHA-256 digests against the local artifacts before updating the public appcast.
 
 ## Verification
 
 - Swift test suite passes.
-- Probe helper shell syntax validates.
-- Fresh debug smoke run reduced measured physical footprint from a stale 1.0 GB debug process to 21.5 MB on the rebuilt app.
-- Xcode release build is expected to remain Developer ID signed, notarized, stapled, Gatekeeper assessed, and packaged with the existing verified DMG Finder layout flow.
+- Debug Xcode build passes.
+- Debug AppKit status-item build was launched locally and appeared in the macOS menu bar while menu-bar settings toggles were off.
+- Release scripts now include hard gates for ZIP payload signature verification, DMG signing, DMG notarization, stapling, install assessment, and uploaded asset digest verification.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.3/AIUsageBattery.zip" length="4139517" type="application/octet-stream" sparkle:edSignature="QRf1cRAezaBYTFEASYbfON/Ars06y5XrCyxoLvnIuQ7bQuscaPktIy2elT1QnlU6azPspe9WM98SXSf54aFFDQ=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.4/AIUsageBattery.zip" length="4142144" type="application/octet-stream" sparkle:edSignature="yCTEL1LKtmUZkwd0QakODn39CGpU3BiKiP5cheosvBBw6Gk7Fe8nN+hYGiZcqEiP4wZtphZ/04P+Di7pO7O5BA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: 3bBMZcO9DHXck5NeRMfb2Dn8YjRukAAtnZK/dPuAnDBQVMfrYsG3CrcB/PdhuvYOQdKlXeGq/7h/xvdhXSKsBw==
-length: 3271
+edSignature: zAvr7xBHnl7nRpDkIzD8QP8rU+XlYxo5GV7E3wyUnaCurQQIISBMpv9FgLMt7rOrmeJDqp7QkizV/slwSw0ZCA==
+length: 2777
 -->
