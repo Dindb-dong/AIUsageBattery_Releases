@@ -4,38 +4,32 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>AIUsageBattery</title>
         <item>
-            <title>0.2.4</title>
-            <pubDate>Thu, 18 Jun 2026 00:15:54 +0900</pubDate>
-            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.4</link>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>0.2.4</sparkle:shortVersionString>
+            <title>0.2.5</title>
+            <pubDate>Thu, 18 Jun 2026 00:24:47 +0900</pubDate>
+            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.5</link>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.4 (Build 8)
+            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.5 (Build 9)
 
-This release fixes the production menu-bar visibility bug, keeps Codex and Claude usage visible as token-aware meters, and hardens the direct-download DMG release path.
+This hotfix keeps the production menu-bar item visible on Macs that previously stored AIUsageBattery as hidden in System Settings.
 
 ## Changes
 
-- Replaces the SwiftUI `MenuBarExtra` anchor with an AppKit `NSStatusItem` so the app stays visible in the menu bar even when old macOS menu-bar visibility state is hidden.
-- Keeps the existing SwiftUI popover and settings UI while using AppKit only for the menu-bar item ownership.
-- Shows Codex and Claude usage with token-aware tracking and projected cost details from local usage data.
-- Preserves the account-aware usage detection fixes that prevent cached usage from bleeding across switched accounts.
-- Signs, notarizes, staples, and Gatekeeper-assesses the distributed DMG itself before release.
-- Blocks publishing when local ZIP or DMG release assets fail signature, notarization, or Gatekeeper checks.
-- Downloads the uploaded GitHub Release assets and compares SHA-256 digests against the local artifacts before updating the public appcast.
+- Stops registering the AppKit `NSStatusItem` as removable, so macOS does not apply the old menu-bar visibility toggle to the production bundle.
+- Keeps clearing legacy `NSStatusItem Visible...` preferences on launch and synchronizes the preference write immediately.
 
 ## Verification
 
+- Removed the stale production `NSStatusItem VisibleCC Item-0 = 0` preference locally and confirmed it did not return after relaunch.
 - Swift test suite passes.
 - Debug Xcode build passes.
-- Debug AppKit status-item build was launched locally and appeared in the macOS menu bar while menu-bar settings toggles were off.
-- Release scripts now include hard gates for ZIP payload signature verification, DMG signing, DMG notarization, stapling, install assessment, and uploaded asset digest verification.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.4/AIUsageBattery.zip" length="4142144" type="application/octet-stream" sparkle:edSignature="yCTEL1LKtmUZkwd0QakODn39CGpU3BiKiP5cheosvBBw6Gk7Fe8nN+hYGiZcqEiP4wZtphZ/04P+Di7pO7O5BA=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.5/AIUsageBattery.zip" length="4142130" type="application/octet-stream" sparkle:edSignature="RTzgqaIq0IxanbvnBjl2FxkHGoSGiw6257f+Cu7lcQ+rgWUTJb/8lU4N06dyHAkC/TCFqx5Soz0O3O8HbHhBBA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: zAvr7xBHnl7nRpDkIzD8QP8rU+XlYxo5GV7E3wyUnaCurQQIISBMpv9FgLMt7rOrmeJDqp7QkizV/slwSw0ZCA==
-length: 2777
+edSignature: fBb+WsAYc85nQGzpj32YWkGL0l95QsvhIvStEBSM7gGeCKM9EgOCna6hRuWnfc2QvgUGaNsFqotdMh6J0x0wAA==
+length: 1975
 -->
