@@ -5,7 +5,7 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
         <title>AIUsageBattery</title>
         <item>
             <title>0.2.6</title>
-            <pubDate>Wed, 15 Jul 2026 16:44:40 +0900</pubDate>
+            <pubDate>Wed, 15 Jul 2026 17:23:47 +0900</pubDate>
             <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.6</link>
             <sparkle:version>10</sparkle:version>
             <sparkle:shortVersionString>0.2.6</sparkle:shortVersionString>
@@ -30,10 +30,10 @@ This release updates Codex tracking for the unified ChatGPT usage model, where C
 - Swift test suite passes with 39 tests.
 - Xcode Debug app build passes.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.6/AIUsageBattery.zip" length="4144830" type="application/octet-stream" sparkle:edSignature="le/cuvUIfCGl75ELx881yBfDQbE41Ykfa4aCCfxZnX4Ux0vD6IVKbSNvnRaARiUQg7tIF2k55iRgLMcDp5pNAQ=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.6/AIUsageBattery.zip" length="4144959" type="application/octet-stream" sparkle:edSignature="LJ29mtxB5QB3ZXrb2cTPKp8bIuhsRHeKKiA+kJRvTg8oZdYpik/zq5zFtw4FZjvydq5w+NN0EIblKhWK4MW0BA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: GQBthUxdy5xivEuDa0Q501+mT3WFM4IjwU6t8ek4hTgVPAAKT81gkWkpwZAXWTgT+zazbDoAn4dnLZeQrfxyAA==
+edSignature: YPsrJx8jiBMhH0qcZpQ2l1TsCU5OBz6Oe9dzM6TAMvZi5cdeOlf7DWvDoUg5xU3eKCqQ2BXOtL/P8z5f3Ui1Dg==
 length: 2308
 -->
