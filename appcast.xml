@@ -4,32 +4,36 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>AIUsageBattery</title>
         <item>
-            <title>0.2.5</title>
-            <pubDate>Thu, 18 Jun 2026 00:24:47 +0900</pubDate>
-            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.5</link>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>0.2.5</sparkle:shortVersionString>
+            <title>0.2.6</title>
+            <pubDate>Wed, 15 Jul 2026 16:44:40 +0900</pubDate>
+            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.6</link>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.2.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.5 (Build 9)
+            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.6 (Build 10)
 
-This hotfix keeps the production menu-bar item visible on Macs that previously stored AIUsageBattery as hidden in System Settings.
+This release updates Codex tracking for the unified ChatGPT usage model, where Codex now reports a single weekly limit instead of separate 5-hour and weekly windows.
 
 ## Changes
 
-- Stops registering the AppKit `NSStatusItem` as removable, so macOS does not apply the old menu-bar visibility toggle to the production bundle.
-- Keeps clearing legacy `NSStatusItem Visible...` preferences on launch and synchronizes the preference write immediately.
+- Reads the current Codex weekly limit from single-window remote and local rate-limit payloads.
+- Classifies local Codex rate-limit events by their reported window duration instead of assuming primary means 5 hours.
+- Removes the obsolete Codex 5-hour meter from the menu bar, popover, settings, cache, and notifications.
+- Keeps Claude's existing 5-hour and weekly display options unchanged.
+- Uses the common weekly window when Codex and Claude are displayed together.
+- Updates onboarding, diagnostics, and documentation for the new provider-specific window model.
 
 ## Verification
 
-- Removed the stale production `NSStatusItem VisibleCC Item-0 = 0` preference locally and confirmed it did not return after relaunch.
-- Swift test suite passes.
-- Debug Xcode build passes.
+- Verified the current local Codex event shape reports a 10,080-minute primary window with no secondary window.
+- Swift test suite passes with 39 tests.
+- Xcode Debug app build passes.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.5/AIUsageBattery.zip" length="4142130" type="application/octet-stream" sparkle:edSignature="RTzgqaIq0IxanbvnBjl2FxkHGoSGiw6257f+Cu7lcQ+rgWUTJb/8lU4N06dyHAkC/TCFqx5Soz0O3O8HbHhBBA=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.6/AIUsageBattery.zip" length="4144830" type="application/octet-stream" sparkle:edSignature="le/cuvUIfCGl75ELx881yBfDQbE41Ykfa4aCCfxZnX4Ux0vD6IVKbSNvnRaARiUQg7tIF2k55iRgLMcDp5pNAQ=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: fBb+WsAYc85nQGzpj32YWkGL0l95QsvhIvStEBSM7gGeCKM9EgOCna6hRuWnfc2QvgUGaNsFqotdMh6J0x0wAA==
-length: 1975
+edSignature: GQBthUxdy5xivEuDa0Q501+mT3WFM4IjwU6t8ek4hTgVPAAKT81gkWkpwZAXWTgT+zazbDoAn4dnLZeQrfxyAA==
+length: 2308
 -->
