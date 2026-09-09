@@ -4,36 +4,34 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>AIUsageBattery</title>
         <item>
-            <title>0.2.6</title>
-            <pubDate>Wed, 15 Jul 2026 17:23:47 +0900</pubDate>
-            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.6</link>
-            <sparkle:version>10</sparkle:version>
-            <sparkle:shortVersionString>0.2.6</sparkle:shortVersionString>
+            <title>0.2.7</title>
+            <pubDate>Wed, 09 Sep 2026 15:21:22 +0900</pubDate>
+            <link>https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/tag/v0.2.7</link>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.2.7</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.6 (Build 10)
+            <description sparkle:format="markdown"><![CDATA[# AI Usage Battery 0.2.7 (Build 11)
 
-This release updates Codex tracking for the unified ChatGPT usage model, where Codex now reports a single weekly limit instead of separate 5-hour and weekly windows.
+이번 릴리스는 큰 Codex 사용 기록을 집계할 때의 메모리 사용 방식을 개선하고, Codex와 Claude를 함께 표시할 때 각 서비스에 맞는 한도를 보여 줍니다.
 
-## Changes
+## 변경 사항
 
-- Reads the current Codex weekly limit from single-window remote and local rate-limit payloads.
-- Classifies local Codex rate-limit events by their reported window duration instead of assuming primary means 5 hours.
-- Removes the obsolete Codex 5-hour meter from the menu bar, popover, settings, cache, and notifications.
-- Keeps Claude's existing 5-hour and weekly display options unchanged.
-- Uses the common weekly window when Codex and Claude are displayed together.
-- Updates onboarding, diagnostics, and documentation for the new provider-specific window model.
+- Codex rollout 로그를 한 줄씩 처리해 전체 파일을 한꺼번에 메모리에 올리지 않습니다.
+- 최근 집계에 필요한 기간만 캐시에 유지하고, 삭제되거나 범위를 벗어난 로그 항목을 정리합니다.
+- `Both` 모드에서 Codex는 주간 한도를 유지하면서 Claude는 5시간 또는 주간 한도를 선택할 수 있습니다.
+- 메뉴 막대 항목의 중복 여백을 줄여 두 서비스의 사용량을 더 간결한 폭으로 표시합니다.
 
-## Verification
+## 검증
 
-- Verified the current local Codex event shape reports a 10,080-minute primary window with no secondary window.
-- Swift test suite passes with 39 tests.
-- Xcode Debug app build passes.
+- 전체 Swift 테스트와 Xcode Debug 빌드로 집계 결과, 캐시 호환성, 서비스별 한도 선택, 메뉴 막대 너비를 확인합니다.
+- 약 200 MiB 합성 로그의 cold benchmark에서 집계 결과가 기존 구현과 일치했고, 평균 최대 RSS는 686 MiB에서 248 MiB로 약 64%, 실행 시간은 12.2초에서 9.8초로 약 20% 줄었습니다. warm run은 0.25초에서 0.23초, 캐시는 5.24 MB에서 2.70 MB로 줄었습니다.
+- 릴리스 빌드는 Developer ID 서명, Apple 공증, stapling, Gatekeeper 검사 후 배포합니다.
 ]]></description>
-            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.6/AIUsageBattery.zip" length="4144959" type="application/octet-stream" sparkle:edSignature="LJ29mtxB5QB3ZXrb2cTPKp8bIuhsRHeKKiA+kJRvTg8oZdYpik/zq5zFtw4FZjvydq5w+NN0EIblKhWK4MW0BA=="></enclosure>
+            <enclosure url="https://github.com/Dindb-dong/AIUsageBattery_Releases/releases/download/v0.2.7/AIUsageBattery.zip" length="4163562" type="application/octet-stream" sparkle:edSignature="yFRNdAljyKvfw9JtChqyTag3E+rg/j3EarIzwJ+i0jMVOyiRN4LQLbwb6XWC3KR+JvR5Ns/TH34WsLhS8dOMCA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: YPsrJx8jiBMhH0qcZpQ2l1TsCU5OBz6Oe9dzM6TAMvZi5cdeOlf7DWvDoUg5xU3eKCqQ2BXOtL/P8z5f3Ui1Dg==
-length: 2308
+edSignature: /P1jaAov/wNwVukdWe7/zpelNo10I+FKBwfkuEQ6jmXI/8pcKweHvqZPb6R21Sg/XKtuXrLmRfsPXi2vkFptDg==
+length: 2654
 -->
